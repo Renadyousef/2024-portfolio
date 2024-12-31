@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bye bye 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+      <div class="hover"><a href="work.html">work</a></div> 
+      <div class="hover"><a href="aboutMe.html">About me</a></div> 
+    </header>
+   <main class="main-index">
+    <p>
+    Hello im ENg.Renad
+    and this is my 2040 projects protfolio at work tab
+    <div id="character"><img src="girl.png"></div>
+</p>
+   </main>
+   <script>//to animate the character
+    const character = document.getElementById("character");
+  
+    document.addEventListener("mousemove", (e) => {
+      const x = e.clientX; // X coordinate of the pointer
+      const y = e.clientY; // Y coordinate of the pointer
+  
+      // Move the character to follow the pointer,  moving the character element  to the X and Y coordinates of the mouse pointer.
+      character.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  </script>
+</body>
+</html>

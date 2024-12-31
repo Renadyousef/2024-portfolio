@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+ 
+       /* Gradient Background */
+       background:linear-gradient(90deg, #4d6ed3, #4b678a, #60a2cb);
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensures the body takes up the full viewport height so i can work with align items*/
+
+
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: "Amiri", serif;
+  
+}
+/*header-contaier{*/
+header{
+    margin-top:10px;
+    display:flex;
+    justify-content:space-evenly;
+    font-size:40px;
+    font-weight: 500;
+   
+
+}
+.hover{
+  
+    padding:5px;
+  
+   
+}
+.hover a{
+    text-decoration:none;
+    color:rgba(240, 248, 255, 0.753)
+}
+
+.hover:hover{
+    border:none;
+   color:rgba(240, 248, 255);
+box-shadow: 5px 10px 25px rgba(92, 100,10,.2);
+  
+    cursor: pointer;
+  
+
+}
+
+.main-index{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   flex-grow: 1; /* Ensures it grows to fill available space so i can align it vertically*/
+   font-size:70px;
+   color:rgba(240, 248, 255, 0.671);
+   margin:7px;
+    
+}
+
+/********work page**********/
+#chosen a{
+    color:rgb(255, 255, 255);
+   
+}
+.main-work{
+    display:flex;
+    flex-wrap: wrap;
+    gap:0px 20px;
+
+
+}
+.card-border{
+display:flex;
+flex-direction:column;
+align-items: center;
+flex-wrap: wrap;
+margin: 15px;
+padding:10px;
+background-color: rgba(240, 248, 255, 0.089);
+box-shadow: 10px 10px 25px rgba(95,99,200,.2);
+border-radius: 8px;
+color:aliceblue;
+height:200px;
+width: 300px;
+
+
+}
+.card-icon{
+    width:170px;
+    height: 100px;
+    
+
+}
+.card-button{
+    border:none;
+    border-radius: 8px;
+    padding:4px;
+    margin: 3px;
+    color:aliceblue;
+    background-color: #000000;
+
+}
+.card-button a{
+    text-decoration: none;
+    color:aliceblue;
+}
+.card-button:hover{
+    background-color: rgb(93, 170, 113);
+    transition: 0.3s ;
+}
+
+/*charectar*/
+#character {
+   
+    position: absolute; /* Allows it to be moved dynamically */
+    top: 50px;
+    left: 50px;
+    font-size: 50px; /* Adjust size of the character */
+    pointer-events: none; /* Prevents it from interfering with clicks */
+    transition: transform 0.1s ease; /* Smooth movement */
+  }
+  #character img{
+    width:80px;
+    height: 80px;
+  }
+  
